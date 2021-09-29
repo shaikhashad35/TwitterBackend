@@ -3,7 +3,7 @@ const TweetSchema = require("./TweetModel");
 
 const mongoose = require("mongoose");
 require("dotenv").config();
-
+console.log("Env:" + process.env.mongoURI);
 mongoose
   .connect(process.env.mongoURI + "twitteer?retryWrites=true&w=majority", {
     useNewUrlParser: true,
