@@ -3,9 +3,8 @@ const TweetSchema = require("./TweetModel");
 
 const mongoose = require("mongoose");
 require("dotenv").config();
-console.log("Environment salt" + process.env.SALT);
 mongoose
-  .connect(process.env.mongoURI + "twitteer?retryWrites=true&w=majority", {
+  .connect(process.env.MONGOURI + "twitteer?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
