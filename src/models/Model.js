@@ -1,5 +1,5 @@
-const UserSchema = require("./User");
-const TweetSchema = require("./Tweet");
+const UserSchema = require("./UserModel");
+const TweetSchema = require("./TweetModel");
 
 const mongoose = require("mongoose");
 require("dotenv").config();
