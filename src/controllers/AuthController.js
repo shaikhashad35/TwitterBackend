@@ -1,3 +1,4 @@
+const { UserModel } = require("../models/Model");
 const jwt = require("jsonwebtoken");
 module.exports = {
   AuthMiddleware: async (req, res, next) => {
