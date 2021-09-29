@@ -6,11 +6,6 @@ const {
   follow,
   unfollow,
 } = require("../controllers/UserController");
-console.log({ signUp });
-// router.use((req, res, next) => {
-//   console.log(req);
-//   next();
-// });
 router.post("/signup", signUp);
 router.post("/login", login);
 router.post("/follow/:to_username", AuthMiddleware, follow);
