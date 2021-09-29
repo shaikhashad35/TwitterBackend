@@ -1,7 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-// const UserModel = require("./model");
-// const TweetModel = require("./model");
 const user = require("./routes/userRoute");
 const tweet = require("./routes/tweetRoute");
 const jwt = require("jsonwebtoken");

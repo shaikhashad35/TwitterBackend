@@ -9,8 +9,8 @@ const {
   dislike,
 } = require("../controllers/TweetController");
 
-router.post("/tweet", AuthMiddleware, createTweet);
-router.post("/deletetweet", AuthMiddleware, deleteTweet);
+router.post("/createtweet", AuthMiddleware, createTweet);
+router.post("/deletetweet/:tweet_id", AuthMiddleware, deleteTweet);
 router.get("/feed", AuthMiddleware, feed);
 router.get("/tweet/:username", getTweet);
 router.post("/like/:tweet_id", AuthMiddleware, like);
