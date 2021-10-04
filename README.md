@@ -1,6 +1,6 @@
 # TwitterBackend
-
-Basic Functionality (required)*
+Its Backend API for Twitter Application which have Login/signup, follow/unfollow, like/unlike, etc. functionalities. 
+Basic Functionality 
 User registration using unique username and a password
 Checked basic validation for username and password with storing the password in encrypted format.
 Unique username will be accepted.
